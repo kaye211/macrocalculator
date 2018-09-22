@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Macro Calculator</title>
+</head>
+
+<body>
+    <div class="container pt-4">
+        <div class="title">
+
+            <h2 id="head" class="py-3 pl-3">Macronutrient Calculator</h2>
+
+            <form id="macro-form" class="pl-3">
+                <div class="form-group">
+                    <label for="age">Age</label>
+                    <input type="number" class="form-control " id="age" placeholder="Age">
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <select class="form-control" id="gender" onchange="getValue();">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    <label class="form-check-label" for="inlineRadio1">Imperial</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">Metric</label>
+                </div>
+                <hr>
+
+                <!-- <div id="metric" class="form-group">
+                    <label for="cm">Height</label>
+                    <input type="number" class="form-control " id="cm" placeholder="Height (cm)">
+                </div> -->
+
+                <div class="form-group">
+                    <label for="goal">Goal</label>
+                    <select class="form-control" id="goal" onchange="getValue();">
+                        <option value="fat-loss">Fat Loss</option>
+                        <option value="muscle-gains">Muscle Gains</option>
+                        <option value="maintenance">Maintenance</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="activity-level">Activity Level</label>
+                    <select class="form-control" id="activity-level" onchange="getValue();">
+                        <option value="lightly-active">Lightly active (moderate exercise but sedentary job)</option>
+                        <option value="moderately-active">Moderately active (intense exercise but sedentary job)</option>
+                        <option value="very-active">Very active (moderate exercise and active job)</option>
+                        <option value="super-active">Extra active (intense exercise and active job)</option>
+                    </select>
+                </div>
+
+
+                <!-- <div class="metric">
+                    <div class="form-group">
+                        <label for="cm">Height</label>
+                        <input type="number" class="form-control " id="cm" placeholder="Height (cm)">
+                    </div>
+                    <div class="form-group">
+                        <label for="kg">Weight</label>
+                        <input type="kilos" class="form-control " id="cm" placeholder="Weight (kg)">
+                    </div>
+                </div> -->
+
+                <div>
+                    <button class="btn btn-secondary " type="submit">Submit</button>
+                </div>
+        </div>
+
+
+        </form>
+        <!-- Will be a modal -->
+        <!-- <div class="imperial  pl-3">
+            <form class="form-inline">
+                <div class="form-group mx-sm-3 mb-2">
+                    <label for="feet" class="sr-only">Feet</label>
+                    <input type="number" class="form-control" id="feet" placeholder="Height"><span class='pl-1'>ft</span>
+                </div>
+                <div class="form-group mx-sm-3 mb-2">
+                    <label for="inches" class="sr-only">Inches</label>
+                    <input type="number" class="form-control" id="inches" placeholder=""><span class='pl-1'>in</span>
+                </div>
+
+            </form>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-6">
+
+                        <label for="weight">Weight</label>
+                        <input type="number" class="form-control " id="name" placeholder="Weight (lbs)">
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+    </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
